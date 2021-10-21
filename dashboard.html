@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Dashboard</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon/favicon.png">
+        <!-- ionicons css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+        <!-- toastr css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <!-- selectpicker css -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+		<!-- datepicker css -->
+		<link rel="stylesheet" href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css">
+        <!-- perfect scrollbar css -->
+        <link rel="stylesheet" href="vendors/scrollbar/perfect-scrollbar.css">
+        <!-- include style -->
+        <link rel="stylesheet" href="style/master.css">
+    </head>
+
+    <body>
+        <section class="wrapper" data-menu="dashboard" data-submenu="">
+            <!-- panel aside start -->
+            <aside class="panel_aside">
+                <div class="brand">
+                    <span class="brand_icon"><i class="icon ion-md-home"></i></span>
+                    <h3>Freelance It Lab</h3>
+                    <a href="#" id="panelClose_btn">
+                        <i class="icon ion-ios-close io-36"></i>
+                    </a>
+                    <a href="#" id="panelOpen_btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- aside nav start -->
+                <ul class="aside_nav">
+                    <!-- dashboard -->
+                    <li id="dashboard">
+                        <a href="">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span class="menu_title">Dashboard</span>
+                        </a>
+                    </li>
+                    <!-- purchase -->
+                    <li id="purchase" class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span class="menu_title">Purchase</span>
+                            <span class="menu_arrow">
+                                <i class="icon ion-ios-arrow-forward right"></i>
+                                <i class="icon ion-ios-arrow-down down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li id="purchase_new"><a href="">Purchase new</a></li>
+                            <li id="purchase_records"><a href="">Records</a></li>
+                        </ul>
+                    </li>
+                    <!-- pages -->
+                    <li id="pages" class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="menu_title">Pages</span>
+                            <span class="menu_arrow">
+                                <i class="icon ion-ios-arrow-forward right"></i>
+                                <i class="icon ion-ios-arrow-down down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li id="terms"><a href="#">Terms and Condition</a></li>
+                            <li id="privacy"><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </li>
+                    <!-- stock -->
+                    <li id="stock">
+                        <a href="#">
+                            <i class="fas fa-layer-group"></i>
+                            <span class="menu_title">Stock</span>
+                        </a>
+                    </li>
+                    <!-- Sale -->
+                    <li id="sale" class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-cart-arrow-down"></i>
+                            <span class="menu_title">Sale</span>
+                            <span class="menu_arrow">
+                                <i class="icon ion-ios-arrow-forward right"></i>
+                                <i class="icon ion-ios-arrow-down down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li id="sale_new"><a href="">Sale new</a></li>
+                            <li id="sale_records"><a href="">Records</a></li>
+                        </ul>
+                    </li>
+                    <!-- sitemap -->
+                    <li id="sitemap">
+                        <a href="#">
+                            <i class="fas fa-sitemap"></i>
+                            <span class="menu_title">Site map</span>
+                        </a>
+                    </li>
+                    <!-- settings -->
+                    <li id="settings">
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span class="menu_title">Settings</span>
+                        </a>
+                    </li>
+                    <!-- purchase -->
+                    <li id="purchase2" class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span class="menu_title">Purchase</span>
+                            <span class="menu_arrow">
+                                <i class="icon ion-ios-arrow-forward right"></i>
+                                <i class="icon ion-ios-arrow-down down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li id="purchase2_new"><a href="">Purchase new</a></li>
+                            <li id="purchase2_records"><a href="">Records</a></li>
+                        </ul>
+                    </li>
+                    <!-- pages -->
+                    <li id="pages2" class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="menu_title">Pages</span>
+                            <span class="menu_arrow">
+                                <i class="icon ion-ios-arrow-forward right"></i>
+                                <i class="icon ion-ios-arrow-down down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li id="pages2_terms"><a href="#">Terms and Condition</a></li>
+                            <li id="pages2_privacy"><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </li>
+                    <!-- stock -->
+                    <li id="stock2">
+                        <a href="#">
+                            <i class="fas fa-layer-group"></i>
+                            <span class="menu_title">Stock</span>
+                        </a>
+                    </li>
+                    <!-- Sale -->
+                    <li id="sale2" class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-cart-arrow-down"></i>
+                            <span class="menu_title">Sale</span>
+                            <span class="menu_arrow">
+                                <i class="icon ion-ios-arrow-forward right"></i>
+                                <i class="icon ion-ios-arrow-down down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li id="sale2_new"><a href="">Sale new</a></li>
+                            <li id="sale2_records"><a href="">Records</a></li>
+                        </ul>
+                    </li>
+                    <!-- form -->
+                    <li id="form">
+                        <a href="form.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span class="menu_title">Form</span>
+                        </a>
+                    </li>
+                    <!-- table -->
+                    <li id="table">
+                        <a href="table.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span class="menu_title">Table</span>
+                        </a>
+                    </li>
+                    <!-- profile -->
+                    <li id="profile">
+                        <a href="profile.html">
+                            <i class="fas fa-user-circle"></i>
+                            <span class="menu_title">Profile</span>
+                        </a>
+                    </li>
+                    <!-- privilege -->
+                    <li id="privilege">
+                        <a href="privilege.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span class="menu_title">Privilege</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- panel aside end -->
+
+
+            <!-- body section start -->
+            <div class="main_body">
+                <!-- main nav start -->
+                <nav class="main_nav">
+                    <ul class="function_menu">
+                        <li class="user_dropdown">
+                            <a href="#" id="aside-toggle">
+                                <i class="icon ion-ios-menu io-23"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="user_menu">
+                        <!-- message -->
+                        <li class="user_dropdown">
+                            <a href="#" class="menu-button">
+                                <i class="icon ion-ios-mail io-21"></i>
+                            </a>
+                            <ul class="sub_menu">
+                                <li class="head">
+                                    <a href="#">
+                                        <h6>You have 2 Message</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Awesome aminmate.css</span>
+                                        <small>10 minit ago</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Awesome aminmate.css</span>
+                                        <small>10 minit ago</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- profile -->
+                        <li class="user_dropdown">
+                            <a href="#" class="menu-button">
+                                <img src="images/user/02.png" alt="">
+                            </a>
+                            <ul class="sub_menu">
+                                <li class="head">
+                                    <a href="profile.html">
+                                        <h6>Username</h6>
+                                        <small>Supperadmin</small>
+                                    </a>
+                                </li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="login.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- main nav end -->
+
+
+                <!-- body container start -->
+                <div class="body_container">
+                    <!-- body nav start -->
+                    <div class="body_nav">
+                        <ul>
+                            <li><a href="">Creat Now</a></li>
+                            <li><a href="" class="active">Purchase All</a></li>
+                            <li><a href="">Nav Three</a></li>
+                            <li><a href="">Nav Four</a></li>
+                        </ul>
+                    </div>
+                    <!-- body nav start -->
+
+
+                    <!-- print header start -->
+                    <!-- print header end -->
+
+
+                    <!-- body content start -->
+                    <div class="body_content">
+                        <div class="box_wrapper">
+                            <div class="dash_box box_1">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_2">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_3">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_4">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_5">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_6">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_7">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_8">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_9">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_10">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_11">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                            <div class="dash_box box_12">
+                                <h2>Today's Income</h2>
+                                <h3>1,00.00 Tk</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- body content end -->
+                </div>
+                <!-- body container end -->
+            </div>
+            <!-- body section end -->
+
+
+            <!-- footer start -->
+            <div class="developer">
+                <p>Developed By : <a href="https://freelanceitlab.com/" target="_blank">Freelance It Lab</a></p>
+            </div>
+            <div class="wrapper_background"></div>
+        </section>
+
+        <!-- jQuery js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- bootstrap js -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+		<!-- selectpicker js -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+        <!-- toastr js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <!-- ckeditor4 js -->
+        <script src="https:////cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+        <!-- datepicker js -->
+		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+        <!-- perfect scrollbar js -->
+        <script src="vendors/scrollbar/perfect-scrollbar.min.js"></script>
+        <!-- include js -->
+        <script src="js/app.js"></script>
+
+    </body>
+</html>
